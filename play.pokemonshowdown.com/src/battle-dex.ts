@@ -180,18 +180,18 @@ const Dex = new class implements ModdedDex {
 	pokeballs: string[] | null = null;
 
 	//TODO we might want to move this to something like data/petmods
-	readonly modResourcePrefix = 'https://raw.githubusercontent.com/scoopapa/dh2/master/data/mods/';
+	readonly modResourcePrefix = 'https://github.com/DAO36/DH2/tree/main/data/mods';
 
 
 	resourcePrefix = (() => {
 		let prefix = '';
 		if (window.document?.location?.protocol !== 'http:') prefix = 'https:';
-		return `${prefix}//${'play.pokemonshowdown.com'}/`;
+		return `${prefix}//${'https://raw.githubusercontent.com/DAO36/DH2/main/play.pokemonshowdown.com'}/`;
 	})();
 
 	fxPrefix = (() => {
 		const protocol = (window.document?.location?.protocol !== 'http:') ? 'https:' : '';
-		return `${protocol}//${'play.pokemonshowdown.com'}/fx/`;
+		return `${protocol}//${'https://raw.githubusercontent.com/DAO36/DH2/main/play.pokemonshowdown.com/fx/'}/fx/`;
 	})();
 
 	loadedSpriteData = {xy: 1, bw: 0};
