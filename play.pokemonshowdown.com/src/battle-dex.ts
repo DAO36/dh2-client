@@ -180,7 +180,7 @@ const Dex = new class implements ModdedDex {
 	pokeballs: string[] | null = null;
 
 	//TODO we might want to move this to something like data/petmods
-	readonly modResourcePrefix = 'https://github.com/DAO36/cobblesouls-showdown-sprites';
+	readonly modResourcePrefix = 'play.pokemonshowdown.com';
 
 
 	resourcePrefix = (() => {
@@ -191,7 +191,7 @@ const Dex = new class implements ModdedDex {
 
 	fxPrefix = (() => {
 		const protocol = (window.document?.location?.protocol !== 'http:') ? 'https:' : '';
-		return `${protocol}//${'https://raw.githubusercontent.com/DAO36/cobblesouls-showdown-sprites/master/'}/fx/`;
+		return `${protocol}//${'play.pokemonshowdown.com'}/fx/`;
 	})();
 
 	loadedSpriteData = {xy: 1, bw: 0};
