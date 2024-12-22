@@ -186,12 +186,12 @@ const Dex = new class implements ModdedDex {
 	resourcePrefix = (() => {
 		let prefix = '';
 		if (window.document?.location?.protocol !== 'http:') prefix = 'https:';
-		return `${prefix}//${'https://raw.githubusercontent.com/DAO36/DH2/main/play.pokemonshowdown.com'}/`;
+		return `${prefix}//${'https://raw.githubusercontent.com/DAO36/cobblesouls-showdown-sprites/master/'}/`;
 	})();
 
 	fxPrefix = (() => {
 		const protocol = (window.document?.location?.protocol !== 'http:') ? 'https:' : '';
-		return `${protocol}//${'https://raw.githubusercontent.com/DAO36/DH2/main/play.pokemonshowdown.com/fx/'}/fx/`;
+		return `${protocol}//${'https://raw.githubusercontent.com/DAO36/cobblesouls-showdown-sprites/master/'}/fx/`;
 	})();
 
 	loadedSpriteData = {xy: 1, bw: 0};
